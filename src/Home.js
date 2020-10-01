@@ -6,7 +6,7 @@ function Home() {
     return (
         <div className="home">
             <img className="home__image"
-                src="https://cdn.onebauer.media/one/media/5ecd/034a/d192/6f65/c245/afbd/PrimeDay-Empire-Banner.png?quality=50&width=1800&ratio=16-9&resizeStyle=aspectfill&format=jpg"
+                src="https://i.insider.com/5d161945a17d6c015c724cb4?width=1100&format=jpeg&auto=webp"
                 alt="" />
 
             <div className="home__row">
@@ -20,10 +20,10 @@ function Home() {
 
                 <Product
                     id="12321341"
-                    title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
+                    title="Razer ManO'War Wireless 7.1 Surround Sound Gaming Headset."
                     price={11.96}
                     rating={5}
-                    image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
+                    image="https://images-na.ssl-images-amazon.com/images/I/71K-OQ0ex7L._AC_SX466_.jpg"
                 />
             </div>
 
