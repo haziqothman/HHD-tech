@@ -1,5 +1,13 @@
 export const initialState = {
-    basket: [],
+    basket: [
+        {
+            id: "12231341",
+            title: "Razer ManO'War Wireless 7.1 Surround Sound Gaming Headset.",
+            price: 11.96,
+            rating: 5,
+            image: "https://images-na.ssl-images-amazon.com/images/I/71K-OQ0ex7L._AC_SX466_.jpg"
+        },
+    ],
     user: null,
 };
 
