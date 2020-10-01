@@ -11,7 +11,7 @@ function Home() {
 
             <div className="home__row">
                 <Product
-                    id="12321341"
+                    id="12321131"
                     title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
                     price={11.96}
                     rating={5}
@@ -19,7 +19,7 @@ function Home() {
                 />
 
                 <Product
-                    id="12321341"
+                    id="12231341"
                     title="Razer ManO'War Wireless 7.1 Surround Sound Gaming Headset."
                     price={11.96}
                     rating={5}
@@ -29,7 +29,7 @@ function Home() {
 
             <div className="home__row">
                 <Product
-                    id="12321341"
+                    id="15231341"
                     title="Q950TS QLED 8K Smart TV (2020)"
                     price={29.300}
                     rating={5}
@@ -37,7 +37,7 @@ function Home() {
                 />
 
                 <Product
-                    id="12321341"
+                    id="15321341"
                     title="2.6GHz 6-core 9th-generation Intel Core i7 processor, Turbo Boost up to 4.5GHz"
                     price={10, 499.00}
                     rating={5}
@@ -45,7 +45,7 @@ function Home() {
                 />
 
                 <Product
-                    id="12321341"
+                    id="15341341"
                     title="Apple Watch Series 6"
                     price={11.96}
                     rating={5}
