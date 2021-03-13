@@ -6,9 +6,18 @@ import Product from './Product';
 function Home() {
     return (
         <div className="home">
-            <img className="home__image"
-                src="https://c4.wallpaperflare.com/wallpaper/175/985/284/abstract-3d-digital-art-dark-wallpaper-preview.jpg"
-                alt="" />
+            <div className="image__button">
+                <div className="banner__text">
+                    <h1 >Pok Ro Jersey [Dark Edition]</h1>
+                    <h2 >Now Available</h2>
+                    <img className="banner__image" src="/images/assets/red.png" alt=""/>
+                </div>
+                <button className="btn__image"><b>SHOP NOW</b></button>
+                <img className="home__image"
+                    src="https://c4.wallpaperflare.com/wallpaper/175/985/284/abstract-3d-digital-art-dark-wallpaper-preview.jpg"
+                    alt="" 
+                    />  
+            </div>
 
             <h2 className="text__home">FEATURED</h2>
 
@@ -71,7 +80,7 @@ function Home() {
 
             <h2 className="text__home2">TRENDING</h2>
 
-          <Link to="/Cart">
+          <Link to="/pages/Cart">
             <img src="/images/assets/white.png" alt="" />
           </Link>
             <h5>POKRO JERSEY</h5>

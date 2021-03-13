@@ -30,3 +30,35 @@
     /* z-index: -1; */
     margin-bottom: 150px;
 }
+
+.btn__image {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, 200%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 18px 50px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 5px 10px;
+}
+
+.banner__image {
+    height: 500px;
+    position: absolute;
+    top: -150%;
+    left: 120%;
+}
+
+.banner__text {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    color: white;
+    font-size: large;
+}
+
