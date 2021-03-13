@@ -6,8 +6,6 @@ import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutline
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,23 +31,29 @@ function Home() {
                 <img className="home__image"
                     src="https://c4.wallpaperflare.com/wallpaper/175/985/284/abstract-3d-digital-art-dark-wallpaper-preview.jpg"
                     alt="" 
+            
                     />  
             </div>
 
-            <h2 className="text__home">FEATURED</h2>
-
-            <div className="home__row">
-               
-                <Product/>
-                
-
-                <Product
-                    // id="12231341"
-                    // title="Razer ManO'War Wireless 7.1 Surround Sound Gaming Headset."
-                    // price={11.96}
-                    // rating={5}
-                    // image="https://images-na.ssl-images-amazon.com/images/I/71K-OQ0ex7L._AC_SX466_.jpg"
-                />
+            <h2 className="text__home2">FEATURED</h2>
+         <div className="trending__shirt">
+            <Grid container spacing={3}>
+                    <Grid item xs>
+                        <div className="image__text">                   
+                                <img className="image__white" src="/images/assets/mask.jpg" alt="" />                            
+                        </div>               
+                    </Grid>
+                    <Grid item xs>
+                        <div className="image__text">                   
+                                <img className="image__white" src="/images/assets/pokro.jpg" alt="" />                             
+                        </div>               
+                    </Grid>
+                    <Grid item xs>
+                        <div className="image__text">                   
+                                <img className="image__white" src="/images/assets/merch.jpg" alt="" />                          
+                        </div>               
+                    </Grid>
+                </Grid> 
             </div>
 
          <h2 className="text__home2">TRENDING</h2>
@@ -134,27 +138,22 @@ function Home() {
          <div className="trending__shirt">
             <Grid container spacing={3}>
                     <Grid item xs>
-                        <div className="image__text">
-                            <Box className="image__box" clone>
-                                <img className="image__white" src="/images/assets/red.png" alt="" />  
-                                {/* <button><b>SHOP NOW</b></button>     */}
-                            </Box>
-                           
+                        <div className="image__text2">                   
+                                <img className="image__white2" src="/images/assets/red.png" alt="" />                       
+                                <button className="btn__categories"><b>SHOP NOW</b></button>       
                         </div>               
                     </Grid>
                     <Grid item xs>
-                        <div className="image__text">
-                        <Box className="image__box" clone>
-                            <img className="image__white" src="/images/assets/white.png" alt="" />      
-                        </Box>
-                        </div>
+                        <div className="image__text2">                   
+                                <img className="image__white2" src="/images/assets/red.png" alt="" />                       
+                            <button><b>SHOP NOW</b></button>       
+                        </div>               
                     </Grid>
                     <Grid item xs>
-                        <div className="image__text">
-                        <Box className="image__box" clone>
-                            <img className="image__white" src="/images/assets/white.png" alt="" />      
-                        </Box>
-                        </div>
+                        <div className="image__text2">                   
+                                <img className="image__white2" src="/images/assets/red.png" alt="" />                       
+                            <button><b>SHOP NOW</b></button>       
+                        </div>               
                     </Grid>
                 </Grid> 
             </div>
