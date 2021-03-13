@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Header.css";
-import SearchIcon from "@material-ui/icons/Search";
-import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket"
+import SearchIcon from '@material-ui/icons/Search';
+import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
 import { useStateValue } from './StateProvider';
+import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
 
 function Header() {
     const [{ basket }] = useStateValue();
@@ -12,42 +13,62 @@ function Header() {
 
     return <nav className="header">
         <Link to="/">
-            <img className="header__logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="" />
+            <img className="header__logo" src="/images/assets/logo.jpg" alt="" />
         </Link>
 
-        <div className="header__search">
+        {/* <div className="header__search">
             <input type="text" className="header__searchInput" />
             <SearchIcon className="header__searchIcon" />
-        </div>
+        </div> */}
 
         <div className="header__nav">
-            <Link to="/Login" className="header__link">
-                <div className="header__option">
-                    <span className="header__optionLineOne">Hello</span>
-                    <span className="header__optionLineTwo">Sign In</span>
-                </div>
-            </Link>
+            <div className="header__link1">
+                <Link to="/Login" className="header__link">
+                    <div className="header__option">
+                        <span className="header__optionLineTwo">WHAT'S NEW</span>
+                    </div>
+                </Link>
 
-            <Link to="/" className="header__link">
-                <div className="header__option">
-                    <span className="header__optionLineOne">Returns</span>
-                    <span className="header__optionLineTwo">& Orders</span>
-                </div>
-            </Link>
+                <Link to="/" className="header__link">
+                    <div className="header__option">
+                        <span className="header__optionLineTwo">SALES</span>
+                    </div>
+                </Link>
 
-            <Link to="/" className="header__link">
-                <div className="header__option">
-                    <span className="header__optionLineOne">Your</span>
-                    <span className="header__optionLineTwo">Prime</span>
-                </div>
-            </Link>
+                <Link to="/" className="header__link">
+                    <div className="header__option">
+                        <span className="header__optionLineTwo">CATEGORIES</span>
+                    </div>
+                </Link>
 
-            <Link to="/checkout" className="header__link">
-                <div className="header__optionBasket">
-                    <ShoppingBasketIcon />
-                    <span className="header__optionLineTwo header__basketCount">{basket?.length}</span>
-                </div>
-            </Link>
+                <Link to="/" className="header__link">
+                    <div className="header__option">
+                        <span className="header__optionLineTwo">CONTACT US</span>
+                    </div>
+                </Link>
+            </div>
+
+            <div className="header__link2">
+                <Link to="/checkout" className="header__link">
+                        <SearchIcon/>
+                </Link>
+
+                <Link to="/checkout" className="header__link">
+                    <div className="header__optionBasket">
+                        <AccountCircleOutlinedIcon/>
+                    </div>
+                </Link>
+
+                <Link to="/checkout" className="header__link">
+                    <div className="header__optionBasket">
+                        <LocalMallOutlinedIcon />
+                        <span className="header__optionLineTwo header__basketCount">{basket?.length}</span>
+                    </div>
+                </Link>
+            </div>
+
+
+          
 
 
         </div>
