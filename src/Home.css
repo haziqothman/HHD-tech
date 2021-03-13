@@ -15,12 +15,14 @@
     margin-bottom: 30px;
     margin-top: -100px;
     margin-left: 25px;
+    color: #464646;
 }
 
 .text__home2 {
-    margin-left: 25px;
+    margin-left: 45px;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    color: #464646;
 }
 
 .home__image {
@@ -47,11 +49,19 @@
     box-shadow: 5px 10px;
 }
 
+b:hover{
+    color: red;
+}
+
 .banner__image {
     height: 500px;
     position: absolute;
     top: -150%;
     left: 120%;
+}
+
+.trending__shirt {
+    margin-left: 190px;
 }
 
 .banner__text {
@@ -60,5 +70,52 @@
     left: 7%;
     color: white;
     font-size: large;
+}
+
+.image__text {
+    text-align: center;
+    margin-left: -65%;
+    margin-top: 10px;
+}
+
+.image__white {
+    width: 50%;
+}
+
+
+.image__description {
+    color: #464646;
+    font-size: x-large;
+}
+
+.price__description {
+    color: #464646;
+    font-size: medium;
+    margin-left: -8.5%;
+    margin-top: 10px;
+}
+
+.icon__text {
+    margin-left: 86px;
+    margin-top: 15px;
+}
+
+.icon__love {
+    margin-right: 10px;
+}
+
+.image__box {
+    background-color: #F0F0F0;
+}
+
+.btn__shirt {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 18px 50px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 5px 10px;
 }
 
