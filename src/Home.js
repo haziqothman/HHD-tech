@@ -6,17 +6,18 @@ import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutline
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      flexGrow: 1,
+        flexGrow: 1,
     },
     paper: {
-      padding: theme.spacing(2),
-      textAlign: 'center',
-      color: theme.palette.text.secondary,
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
     },
-  }));
+}));
 
 function Home() {
     return (
@@ -25,138 +26,137 @@ function Home() {
                 <div className="banner__text">
                     <h1 >Pok Ro Jersey [Dark Edition]</h1>
                     <h2 >Now Available</h2>
-                    <img className="banner__image" src="/images/assets/red.png" alt=""/>
+                    <img className="banner__image" src="/images/assets/red.png" alt="" />
                 </div>
                 <button className="btn__image"><b>SHOP NOW</b></button>
                 <img className="home__image"
-                    src="https://c4.wallpaperflare.com/wallpaper/175/985/284/abstract-3d-digital-art-dark-wallpaper-preview.jpg"
-                    alt="" 
-            
-                    />  
+                    src="/images/assets/BG.jpg" alt="" />
             </div>
 
             <h2 className="text__home2">FEATURED</h2>
-         <div className="trending__shirt">
-            <Grid container spacing={3}>
+            <div className="trending__shirt">
+                <Grid container spacing={3}>
                     <Grid item xs>
-                        <div className="image__text">                   
-                                <img className="image__white" src="/images/assets/mask.jpg" alt="" />                            
-                        </div>               
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/mask.jpg" alt="" />
+                        </div>
                     </Grid>
                     <Grid item xs>
-                        <div className="image__text">                   
-                                <img className="image__white" src="/images/assets/pokro.jpg" alt="" />                             
-                        </div>               
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/pokro.jpg" alt="" />
+                        </div>
                     </Grid>
                     <Grid item xs>
-                        <div className="image__text">                   
-                                <img className="image__white" src="/images/assets/merch.jpg" alt="" />                          
-                        </div>               
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/merch.jpg" alt="" />
+                        </div>
                     </Grid>
-                </Grid> 
+                </Grid>
             </div>
 
-         <h2 className="text__home2">TRENDING</h2>
-         <div className="trending__shirt">
-            <Grid container spacing={3}>
-                <Grid item xs>
-                    <div className="image__text">
-                        <img className="image__white" src="/images/assets/red.png" alt="" />      
-                        <h1 className="image__description">POKRO JERSEY</h1>
-                    </div>
-                    <h2 className="price__description">RM 69.00</h2>
-                    <div className="icon__text">
-                        <FavoriteBorderOutlinedIcon className="icon__love"/>
-                        <LocalMallOutlinedIcon/>
-                    </div>
-                </Grid>
-                <Grid item xs>
-                    <div className="image__text">
-                    <img className="image__white" src="/images/assets/white.png" alt="" />      
-                    <h1 className="image__description">POKRO JERSEY</h1>
-                    </div>
-                    <h2 className="price__description">RM 69.00</h2>
-                    <div className="icon__text">
-                    <FavoriteBorderOutlinedIcon className="icon__love"/>
-                    <LocalMallOutlinedIcon/>
-                    </div>
-                </Grid>
-                <Grid item xs>
-                    <div className="image__text">
-                        <img className="image__white" src="/images/assets/white.png" alt="" />      
-                        <h1 className="image__description">WEEBCLASS SHIRT</h1>
-                    </div>
-                    <h2 className="price__description">RM 25.00</h2>
-                    <div className="icon__text">
-                        <FavoriteBorderOutlinedIcon className="icon__love"/>
-                        <LocalMallOutlinedIcon/>
-                    </div>
-                </Grid>
-             </Grid>       
-         </div>
-
-         <div className="trending__shirt">
-            <Grid container spacing={3}>
-                <Grid item xs>
-                    <div className="image__text">
-                        <img className="image__white" src="/images/assets/red.png" alt="" />      
-                        <h1 className="image__description">POKRO JERSEY</h1>
-                    </div>
-                    <h2 className="price__description">RM 69.00</h2>
-                    <div className="icon__text">
-                        <FavoriteBorderOutlinedIcon className="icon__love"/>
-                        <LocalMallOutlinedIcon/>
-                    </div>
-                </Grid>
-                <Grid item xs>
-                    <div className="image__text">
-                    <img className="image__white" src="/images/assets/white.png" alt="" />      
-                    <h1 className="image__description">POKRO JERSEY</h1>
-                    </div>
-                    <h2 className="price__description">RM 69.00</h2>
-                    <div className="icon__text">
-                    <FavoriteBorderOutlinedIcon className="icon__love"/>
-                    <LocalMallOutlinedIcon/>
-                    </div>
-                </Grid>
-                <Grid item xs>
-                    <div className="image__text">
-                        <img className="image__white" src="/images/assets/white.png" alt="" />      
-                        <h1 className="image__description">WEEBCLASS SHIRT</h1>
-                    </div>
-                    <h2 className="price__description">RM 69.00</h2>
-                    <div className="icon__text">
-                        <FavoriteBorderOutlinedIcon className="icon__love"/>
-                        <LocalMallOutlinedIcon/>
-                    </div>
-                </Grid>
-             </Grid>       
-         </div>
-         
-
-         <h2 className="text__home2">CATEGORIES</h2>
-         <div className="trending__shirt">
-            <Grid container spacing={3}>
+            <h2 className="text__home2">TRENDING</h2>
+            <div className="trending__shirt">
+                <Grid container spacing={3}>
                     <Grid item xs>
-                        <div className="image__text2">                   
-                                <img className="image__white2" src="/images/assets/red.png" alt="" />                       
-                                <button className="btn__categories"><b>SHOP NOW</b></button>       
-                        </div>               
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/red.png" alt="" />
+                            <h1 className="image__description">POKRO JERSEY</h1>
+                        </div>
+                        <h2 className="price__description">RM 69.00</h2>
+                        <div className="icon__text">
+                            <FavoriteBorderOutlinedIcon className="icon__love" />
+                            <LocalMallOutlinedIcon />
+                        </div>
                     </Grid>
                     <Grid item xs>
-                        <div className="image__text2">                   
-                                <img className="image__white2" src="/images/assets/red.png" alt="" />                       
-                            <button><b>SHOP NOW</b></button>       
-                        </div>               
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/white.png" alt="" />
+                            <h1 className="image__description">POKRO JERSEY</h1>
+                        </div>
+                        <h2 className="price__description">RM 69.00</h2>
+                        <div className="icon__text">
+                            <FavoriteBorderOutlinedIcon className="icon__love" />
+                            <LocalMallOutlinedIcon />
+                        </div>
                     </Grid>
                     <Grid item xs>
-                        <div className="image__text2">                   
-                                <img className="image__white2" src="/images/assets/red.png" alt="" />                       
-                            <button><b>SHOP NOW</b></button>       
-                        </div>               
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/white.png" alt="" />
+                            <h1 className="image__description">WEEBCLASS SHIRT</h1>
+                        </div>
+                        <h2 className="price__description">RM 25.00</h2>
+                        <div className="icon__text">
+                            <FavoriteBorderOutlinedIcon className="icon__love" />
+                            <LocalMallOutlinedIcon />
+                        </div>
                     </Grid>
-                </Grid> 
+                </Grid>
             </div>
+
+            <div className="trending__shirt">
+                <Grid container spacing={3}>
+                    <Grid item xs>
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/red.png" alt="" />
+                            <h1 className="image__description">POKRO JERSEY</h1>
+                        </div>
+                        <h2 className="price__description">RM 69.00</h2>
+                        <div className="icon__text">
+                            <FavoriteBorderOutlinedIcon className="icon__love" />
+                            <LocalMallOutlinedIcon />
+                        </div>
+                    </Grid>
+                    <Grid item xs>
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/white.png" alt="" />
+                            <h1 className="image__description">POKRO JERSEY</h1>
+                        </div>
+                        <h2 className="price__description">RM 69.00</h2>
+                        <div className="icon__text">
+                            <FavoriteBorderOutlinedIcon className="icon__love" />
+                            <LocalMallOutlinedIcon />
+                        </div>
+                    </Grid>
+                    <Grid item xs>
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/white.png" alt="" />
+                            <h1 className="image__description">WEEBCLASS SHIRT</h1>
+                        </div>
+                        <h2 className="price__description">RM 69.00</h2>
+                        <div className="icon__text">
+                            <FavoriteBorderOutlinedIcon className="icon__love" />
+                            <LocalMallOutlinedIcon />
+                        </div>
+                    </Grid>
+                </Grid>
+            </div>
+
+
+            <h2 className="text__home2">CATEGORIES</h2>
+            <div className="trending__shirt">
+                <Grid container spacing={3} >
+                    <Grid item xs>
+                        <div className="image__text2">
+                            <img className="image__white2" src="/images/assets/red.png" alt="" />
+                            <button className="btn__categories"><b>SHOP NOW</b></button>
+                        </div>
+                    </Grid>
+                    <Grid item xs>
+                        <div className="image__text2">
+                            <img className="image__white2" src="/images/assets/red.png" alt="" />
+                            <button><b>SHOP NOW</b></button>
+                        </div>
+                    </Grid>
+                    <Grid item xs>
+                        <div className="image__text2">
+                            <img className="image__white2" src="/images/assets/red.png" alt="" />
+                            <button><b>SHOP NOW</b></button>
+                        </div>
+                    </Grid>
+                </Grid>
+            </div>
+
+            
         </div>
     )
 }
