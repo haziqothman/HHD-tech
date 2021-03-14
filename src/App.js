@@ -4,11 +4,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from './Header';
 import Home from "./Home";
 import Checkout from './Checkout';
+import Footer from './Footer';
 
 function App() {
   return (
-    <Router>
-      <div className="app">
+    <div className="page-container">
+      <div className="content-wrap">
+      <Router>
         <Switch>
           <Route path="/checkout">
             <Header />
@@ -23,8 +25,11 @@ function App() {
             <Home />
           </Route>
         </Switch>
+      </Router >
       </div>
-    </Router>
+      <Footer/>
+    </div>
+
   );
 }
 
