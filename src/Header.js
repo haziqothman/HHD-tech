@@ -50,18 +50,24 @@ function Header() {
 
             <div className="header__link2">
                 <Link to="/checkout" className="header__link">
+                    <span>
                         <SearchIcon/>
+                    </span>
                 </Link>
 
                 <Link to="/checkout" className="header__link">
                     <div className="header__optionBasket">
+                        <span>
                         <AccountCircleOutlinedIcon/>
+                        </span>
                     </div>
                 </Link>
 
                 <Link to="/checkout" className="header__link">
                     <div className="header__optionBasket">
+                        <span>
                         <LocalMallOutlinedIcon />
+                        </span>
                         <span className="header_optionLineTwo header_basketCount">{basket?.length}</span>
                     </div>
                 </Link>
