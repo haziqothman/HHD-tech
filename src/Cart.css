@@ -1,0 +1,16 @@
+.image__white {
+  height: 500px;
+  width: 500px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.tshirt__description {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.description__text1 {
+  margin-top: 10px;
+  font-size: x-large;
+}

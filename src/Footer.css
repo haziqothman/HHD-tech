@@ -19,7 +19,7 @@
     
 }
 .Patent {
-    margin-left: 12.5cm;
+    margin-left: 10cm;
 }    
   
   /* Clear floats after the columns */
@@ -32,5 +32,5 @@
   }
   .Socialicon {
       display: flex;
-    margin-left: 17cm;
+    margin-left: 15cm;
 }    

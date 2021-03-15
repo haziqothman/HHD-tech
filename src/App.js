@@ -5,6 +5,7 @@ import Header from './Header';
 import Home from "./Home";
 import Checkout from './Checkout';
 import Footer from './Footer';
+import Cart from "./Cart";
 
 function App() {
   return (
@@ -15,10 +16,9 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
-            {/* <h1>Checkout</h1> */}
           </Route>
-          <Route path="/login">
-            {/* <Login /> */}
+          <Route path="/Cart">
+            <Cart/>
           </Route>
           <Route path="/">
             <Header />

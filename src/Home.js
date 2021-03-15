@@ -62,10 +62,12 @@ function Home() {
                             <img className="image__white" src="/images/assets/red.png" alt="" />
                             <h1 className="image__description">POKRO JERSEY</h1>
                         </div>
-                        <h2 className="price__description">RM 69.00</h2>
+                        <h2 className="price__description">RM 690.00</h2>
                         <div className="icon__text">
                             <FavoriteBorderOutlinedIcon className="icon__love" />
-                            <LocalMallOutlinedIcon />
+                            <Link to="./Cart" className="header__link">
+                              <LocalMallOutlinedIcon />
+                            </Link>
                         </div>
                     </Grid>
                     <Grid item xs>
@@ -138,19 +140,19 @@ function Home() {
                     <Grid item xs>
                         <div className="image__text2">
                             <img className="image__white2" src="/images/assets/red.png" alt="" />
-                            <button className="btn__categories"><b>SHOP NOW</b></button>
+                            <button className="btn__categories"><b>MASK</b></button>
                         </div>
                     </Grid>
                     <Grid item xs>
                         <div className="image__text2">
                             <img className="image__white2" src="/images/assets/red.png" alt="" />
-                            <button><b>SHOP NOW</b></button>
+                            <button className="btn__categories"><b>T-SHIRT</b></button>
                         </div>
                     </Grid>
                     <Grid item xs>
                         <div className="image__text2">
                             <img className="image__white2" src="/images/assets/red.png" alt="" />
-                            <button><b>SHOP NOW</b></button>
+                            <button className="btn__categories"><b>HOODIE</b></button>
                         </div>
                     </Grid>
                 </Grid>
