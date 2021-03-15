@@ -36,7 +36,7 @@ function Home() {
             <h2 className="text__home2">FEATURED</h2>
             <div className="trending__shirt">
                 <Grid container spacing={3}>
-                    <Grid item xs>
+                    <Grid item xs >
                         <div className="image__text">
                             <img className="image__white" src="/images/assets/mask.jpg" alt="" />
                         </div>

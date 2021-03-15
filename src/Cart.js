@@ -21,7 +21,7 @@ function Cart() {
         <Header />
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>   
-            <img className="image__white" src="/images/assets/red.png" alt="" />
+            <img className="image__cart" src="/images/assets/red.png" alt="" />
         </Grid>
         <Grid item xs={12} sm={6}>
           <div className="tshirt__description">
