@@ -83,7 +83,7 @@ function Home() {
                 </Grid>
                 <Grid item xs>
                     <div className="image__text">
-                        <img className="image__white" src="/images/assets/white.png" alt="" />      
+                        <img className="image__white3" src="/images/assets/weebclass.png" alt="" />      
                         <h1 className="image__description">WEEBCLASS SHIRT</h1>
                     </div>
                     <h2 className="price__description">RM 25.00</h2>
@@ -135,28 +135,30 @@ function Home() {
          
 
          <h2 className="text__home2">CATEGORIES</h2>
-         <div className="trending__shirt">
+         <div className="trending__shirt2">
             <Grid container spacing={3}>
                     <Grid item xs>
                         <div className="image__text2">                   
-                                <img className="image__white2" src="/images/assets/red.png" alt="" />                       
-                                <button className="btn__categories"><b>SHOP NOW</b></button>       
+                            <img className="image__white2" src="/images/assets/white.png" alt="" />                       
+                            <button className="btn__categories"><b>MASK</b></button>       
                         </div>               
                     </Grid>
                     <Grid item xs>
                         <div className="image__text2">                   
                                 <img className="image__white2" src="/images/assets/red.png" alt="" />                       
-                            <button><b>SHOP NOW</b></button>       
+                            <button className="btn__categories"><b>T-SHIRT</b></button>       
                         </div>               
                     </Grid>
                     <Grid item xs>
                         <div className="image__text2">                   
                                 <img className="image__white2" src="/images/assets/red.png" alt="" />                       
-                            <button><b>SHOP NOW</b></button>       
+                            <button className="btn__categories"><b>HOODIE</b></button>       
                         </div>               
                     </Grid>
                 </Grid> 
             </div>
+
+            <h2 className="text__home2">CATEGORIES</h2>
         </div>
     )
 }
