@@ -78,7 +78,9 @@ function Home() {
                         <h2 className="price__description">RM 69.00</h2>
                         <div className="icon__text">
                             <FavoriteBorderOutlinedIcon className="icon__love" />
-                            <LocalMallOutlinedIcon />
+                            <Link to="./Cart" className="header__link">
+                              <LocalMallOutlinedIcon />
+                            </Link>
                         </div>
                     </Grid>
                     <Grid item xs>
@@ -89,7 +91,9 @@ function Home() {
                         <h2 className="price__description">RM 25.00</h2>
                         <div className="icon__text">
                             <FavoriteBorderOutlinedIcon className="icon__love" />
-                            <LocalMallOutlinedIcon />
+                            <Link to="./Cart" className="header__link">
+                              <LocalMallOutlinedIcon />
+                            </Link>
                         </div>
                     </Grid>
                 </Grid>
@@ -105,7 +109,9 @@ function Home() {
                         <h2 className="price__description">RM 69.00</h2>
                         <div className="icon__text">
                             <FavoriteBorderOutlinedIcon className="icon__love" />
-                            <LocalMallOutlinedIcon />
+                            <Link to="./Cart" className="header__link">
+                              <LocalMallOutlinedIcon />
+                            </Link>
                         </div>
                     </Grid>
                     <Grid item xs>
@@ -116,7 +122,9 @@ function Home() {
                         <h2 className="price__description">RM 69.00</h2>
                         <div className="icon__text">
                             <FavoriteBorderOutlinedIcon className="icon__love" />
-                            <LocalMallOutlinedIcon />
+                            <Link to="./Cart" className="header__link">
+                              <LocalMallOutlinedIcon />
+                            </Link>
                         </div>
                     </Grid>
                     <Grid item xs>
@@ -127,7 +135,9 @@ function Home() {
                         <h2 className="price__description">RM 69.00</h2>
                         <div className="icon__text">
                             <FavoriteBorderOutlinedIcon className="icon__love" />
-                            <LocalMallOutlinedIcon />
+                            <Link to="./Cart" className="header__link">
+                              <LocalMallOutlinedIcon />
+                            </Link>
                         </div>
                     </Grid>
                 </Grid>
