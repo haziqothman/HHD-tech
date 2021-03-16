@@ -2,31 +2,64 @@ import React from 'react';
 import Header from './Header';
 import './Cart.css'
 import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
+import {withStyles, makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import { Link } from 'react-router-dom';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
+import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
+import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
-      flexGrow: 1,
+      flexGrow: 1,   
+  },
 
-      modal: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      },
-      paper: {
-        backgroundColor: theme.palette.background.paper,
-        border: '2px solid #000',
-        boxShadow: theme.shadows[5],
-        padding: theme.spacing(2, 4, 3),
-      },
+  table: {
+    minWidth: 700,
   },
 }));
+
+const StyledTableCell = withStyles((theme) => ({
+  head: {
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+  },
+  body: {
+    fontSize: 14,
+  },
+}))(TableCell);
+
+const StyledTableRow = withStyles((theme) => ({
+  root: {
+    '&:nth-of-type(odd)': {
+      backgroundColor: theme.palette.action.hover,
+    },
+  },
+}))(TableRow);
+
+function createData(name, calories, fat, carbs, protein) {
+  return { name, calories, fat, carbs, protein };
+}
+
+const rows = [
+  createData('XS', 159, 6.0, 24, 4.0),
+  createData('S', 237, 9.0, 37, 4.3),
+  createData('M', 262, 16.0, 24, 6.0),
+  createData('L', 305, 3.7, 67, 4.3),
+  createData('XL', 356, 16.0, 49, 3.9),
+  createData('2XL', 356, 16.0, 49, 3.9),
+];
 
 export default function Cart() {
   const classes = useStyles();
@@ -94,7 +127,34 @@ export default function Cart() {
             >
               <Fade in={open}>
                 <div className={classes.paper}>
-                <h1>test</h1>
+                  <div className="table__modal">
+                    <TableContainer component={Paper}>
+                      <Table className={classes.table} aria-label="customized table">
+                        <TableHead>
+                          <TableRow>
+                            <StyledTableCell >SIZE(CM)</StyledTableCell>
+                            <StyledTableCell align="right">SHOULDER</StyledTableCell>
+                            <StyledTableCell align="right">CHEST</StyledTableCell>
+                            <StyledTableCell align="right">SLEEVE</StyledTableCell>
+                            <StyledTableCell align="right">LENGTH</StyledTableCell>
+                          </TableRow>
+                        </TableHead>
+                        <TableBody>
+                          {rows.map((row) => (
+                            <StyledTableRow key={row.name}>
+                              <StyledTableCell component="th" scope="row">
+                                {row.name}
+                              </StyledTableCell>
+                              <StyledTableCell align="right">{row.calories}</StyledTableCell>
+                              <StyledTableCell align="right">{row.fat}</StyledTableCell>
+                              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
+                              <StyledTableCell align="right">{row.protein}</StyledTableCell>
+                            </StyledTableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </TableContainer>
+                  </div>
                 </div>
               </Fade>
             </Modal>
@@ -110,6 +170,52 @@ export default function Cart() {
             </Link>
         </Grid>
       </Grid>
+
+      <hr className="line__description"/>
+      <h2 className="text__cart">RELATED PRODUCT</h2>
+            <div className="trending__shirt">
+                <Grid container spacing={3}>
+                    <Grid item xs>
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/red.png" alt="" />
+                            <h1 className="image__description">POKRO JERSEY</h1>
+                        </div>
+                        <h2 className="price__description">RM 690.00</h2>
+                        <div className="icon__text">
+                            <FavoriteBorderOutlinedIcon className="icon__love" />
+                            <Link to="./Cart" className="header__link">
+                              <LocalMallOutlinedIcon />
+                            </Link>
+                        </div>
+                    </Grid>
+                    <Grid item xs>
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/white.png" alt="" />
+                            <h1 className="image__description">POKRO JERSEY</h1>
+                        </div>
+                        <h2 className="price__description">RM 69.00</h2>
+                        <div className="icon__text">
+                            <FavoriteBorderOutlinedIcon className="icon__love" />
+                            <Link to="./Cart" className="header__link">
+                              <LocalMallOutlinedIcon />
+                            </Link>
+                        </div>
+                    </Grid>
+                    <Grid item xs>
+                        <div className="image__text">
+                            <img className="image__white" src="/images/assets/white.png" alt="" />
+                            <h1 className="image__description">WEEBCLASS SHIRT</h1>
+                        </div>
+                        <h2 className="price__description">RM 25.00</h2>
+                        <div className="icon__text">
+                            <FavoriteBorderOutlinedIcon className="icon__love" />
+                            <Link to="./Cart" className="header__link">
+                              <LocalMallOutlinedIcon />
+                            </Link>
+                        </div>
+                    </Grid>
+                </Grid>
+            </div>
      </>
     );
       }
