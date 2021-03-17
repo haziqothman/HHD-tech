@@ -103,3 +103,16 @@
  .table__modal {
    margin-top: 150px;
  }
+
+ .text__preOrder {
+   margin-top: 10px;
+ }
+
+ .card__content {
+   display: flex;
+   margin-top: 200px;
+ }
+
+ .card__content2 {
+  display: flex;
+}

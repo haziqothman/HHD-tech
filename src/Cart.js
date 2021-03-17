@@ -17,7 +17,11 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -64,6 +68,8 @@ const rows = [
 export default function Cart() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
+  const bull = <span className={classes.bullet}>•</span>;
 
   const handleOpen = () => {
     setOpen(true);
@@ -73,6 +79,13 @@ export default function Cart() {
     setOpen(false);
   };
 
+  const handleOpen2 = () => {
+    setOpen2(true);
+  };
+
+  const handleClose2 = () => {
+    setOpen2(false);
+  };
     return (   
       <>
       <Header />
@@ -165,9 +178,66 @@ export default function Cart() {
             <button className="btn__addToCart2">ADD TO CART</button>
             <button className="btn__addToCart3">FAVOURITE</button>
           </div>
-          <Link className="size__guide" type="button" onClick={handleOpen}>
+          <Link className="size__guide" type="button" onClick={handleOpen2}>
               View Product Details
-            </Link>
+          </Link>
+          <Modal
+              aria-labelledby="transition-modal-title"
+              aria-describedby="transition-modal-description"
+              className={classes.modal}
+              open={open2}
+              onClose={handleClose2}
+              closeAfterTransition
+              BackdropComponent={Backdrop}
+              BackdropProps={{
+                timeout: 500,
+              }}
+            >
+               <Fade in={open2}>
+                <div className={classes.paper2}>
+                <div className="card__content">
+                  <Card className={classes.root}>           
+                    <CardContent>
+                    <div className="card__content2">
+                      <Typography variant="h5" component="h2">
+                        SPECIFICATIONS
+                      </Typography>
+                      <Typography className={classes.pos} color="textSecondary">
+                        <ul>• AEROREADY Fabric</ul>
+                        <ul>• Dual Layer V-Neck Collar</ul>
+                        <ul>• Fitted Sport Cuffs</ul>
+                        <ul>• Order Size Up For Loose Fit</ul>
+                        <ul>• Dye Sublimated Jersey, Will NOT Crack, Fade, Or Peel</ul>
+                      </Typography>
+                      <div className="text__preOrder">
+                        <Typography variant="body2" component="p" >
+                          PRE-ORDER PRODUCT
+                          {/* <br />
+                          {'"a benevolent smile"'} */}
+                        </Typography>
+                      </div>
+                      <Typography variant="h5" component="h2">
+                        SPECIFICATIONS
+                      </Typography>
+                      <Typography className={classes.pos} color="textSecondary">
+                        <ul>• AEROREADY Fabric</ul>
+                        <ul>• Dual Layer V-Neck Collar</ul>
+                        <ul>• Fitted Sport Cuffs</ul>
+                        <ul>• Order Size Up For Loose Fit</ul>
+                        <ul>• Dye Sublimated Jersey, Will NOT Crack, Fade, Or Peel</ul>
+                      </Typography>
+                      <div className="text__preOrder">
+                        <Typography variant="body2" component="p" >
+                          PRE-ORDER PRODUCT
+                        </Typography>
+                      </div>
+                      </div>
+                    </CardContent>      
+                </Card>
+                </div>
+                </div>
+              </Fade>
+            </Modal>
         </Grid>
       </Grid>
 
@@ -180,7 +250,7 @@ export default function Cart() {
                             <img className="image__white" src="/images/assets/red.png" alt="" />
                             <h1 className="image__description">POKRO JERSEY</h1>
                         </div>
-                        <h2 className="price__description">RM 690.00</h2>
+                        <h2 className="price__description">RM 69.00</h2>
                         <div className="icon__text">
                             <FavoriteBorderOutlinedIcon className="icon__love" />
                             <Link to="./Cart" className="header__link">
